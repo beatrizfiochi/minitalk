@@ -6,11 +6,11 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 15:35:51 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/08/25 13:49:07 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:26:27 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 // This function prints the given string replacing the format specifier
 //			(%c, %i etc) with the variable content

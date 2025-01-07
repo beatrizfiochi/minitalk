@@ -6,11 +6,11 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 11:01:49 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/08/25 14:11:34 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:27:31 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 // This function prints a string
 

@@ -6,11 +6,11 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 20:00:45 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/08/25 20:09:21 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:26:55 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 // This function prints the number in hexadecimal
 //

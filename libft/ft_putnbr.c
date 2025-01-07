@@ -6,11 +6,11 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 12:48:29 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/08/25 12:26:27 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:27:10 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_putnbr(unsigned long long n)
 {

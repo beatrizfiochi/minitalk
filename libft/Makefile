@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bfiochi- <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/07 10:47:59 by bfiochi-          #+#    #+#              #
-#    Updated: 2025/01/07 13:26:40 by bfiochi-         ###   ########.fr        #
+#    Updated: 2025/01/07 21:24:55 by bfiochi-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,13 +28,13 @@ SRCSBONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
 		ft_lstmap.c
 
 SRCSPRINTF = ft_putchar.c ft_putstr.c ft_putnbr.c ft_puthex.c ft_putpt.c\
-		ft_format.c ft_printf.c libft/ft_strlen.c
+		ft_format.c ft_printf.c
 
 OBJS = $(SRCS:.c=.o)
 
 OBJSBONUS = $(SRCSBONUS:.c=.o)
 
-OBJSPRINTF = $(SRCSPRINTF: .c=.o)
+OBJSPRINTF = $(SRCSPRINTF:.c=.o)
 
 all: $(NAME)
 
@@ -53,4 +53,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-       
+

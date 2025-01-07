@@ -6,11 +6,11 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 15:14:41 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/08/25 16:42:53 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:28:29 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 // This function process one format specifier and return the length of
 //			the printed string

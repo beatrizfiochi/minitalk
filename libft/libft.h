@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bfiochi- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/14 14:26:04 by bfiochi-          #+#    #+#             */
-/*   Updated: 2024/05/26 13:30:13 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/07 21:00:05 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,14 @@ int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *nptr);
+int		ft_putstr(char *str);
+int		ft_putchar(char c);
+int		ft_putpt(void *pt);
+int		ft_putnbr(unsigned long long n);
+int		ft_putsignednbr(long long sn);
+int		ft_puthex(unsigned long long n, bool is_lowercase);
+int		ft_format(va_list args, const char c);
+int		ft_printf(const char *format, ...);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
@@ -71,14 +79,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lstm, void (*f)(void*));
 int		ft_lstsize(t_list *lst);
-
-int	ft_putstr(char *str);
-int	ft_putchar(char c);
-int	ft_putpt(void *pt);
-int	ft_putnbr(unsigned long long n);
-int	ft_putsignednbr(long long sn);
-int	ft_puthex(unsigned long long n, bool is_lowercase);
-int	ft_format(va_list args, const char c);
-int	ft_printf(const char *format, ...);
 
 #endif
