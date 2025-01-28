@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 19:40:11 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/01/28 19:51:07 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/28 20:30:46 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ void	handler(int signal, siginfo_t *info, void *context)
 	static unsigned char	c = 0;
 
 	(void) context;
-	if(signal == SIGUSR2)
+	if (signal == SIGUSR2)
 		c = c << 1;
-	else if(signal == SIGUSR1)
+	else if (signal == SIGUSR1)
 		c = (c << 1) | 0b00000001;
 	i++;
-	if(i == 8)
+	if (i == 8)
 	{
-		if(c == '\0')
+		if (c == '\0')
 			ft_printf("\n");
 		else
 			ft_printf("%c", c);
