@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 19:40:11 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/01/28 22:13:33 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/28 22:18:09 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	main(void)
 	struct sigaction	act;
 
 	ft_printf("PID: %d\n", getpid());
-	act = (struct sigaction){ 0 };
+	act = (struct sigaction){0};
 	act.sa_flags = SA_SIGINFO;
 	act.sa_sigaction = handler;
 	sigaction(SIGUSR1, &act, NULL);

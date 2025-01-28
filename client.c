@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 21:40:27 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/01/28 22:13:37 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/28 22:17:48 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	main(int argc, char **argv)
 {
 	struct sigaction	act;
 
-	act = (struct sigaction){ 0 };
+	act = (struct sigaction){0};
 	act.sa_sigaction = handler;
 	act.sa_flags = SA_SIGINFO;
 	if (argc != 3)
