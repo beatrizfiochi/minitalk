@@ -6,7 +6,7 @@
 /*   By: bfiochi- <bfiochi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 21:40:27 by bfiochi-          #+#    #+#             */
-/*   Updated: 2025/01/28 20:42:12 by bfiochi-         ###   ########.fr       */
+/*   Updated: 2025/01/28 22:13:37 by bfiochi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	send_char(int pid, int c)
 			kill(pid, SIGUSR2);
 		bit++;
 		while (g_received == false)
-			pause();
+			usleep(10);
 	}
 }
 
@@ -48,8 +48,10 @@ void	send_str(int pid, char *str)
 	send_char(pid, '\0');
 }
 
-void	handler(int signal)
+void	handler(int signal, siginfo_t *info, void *context)
 {
+	(void)info;
+	(void)context;
 	if (signal == SIGUSR1)
 		g_received = true;
 }
@@ -58,7 +60,8 @@ int	main(int argc, char **argv)
 {
 	struct sigaction	act;
 
-	act.sa_handler = handler;
+	act = (struct sigaction){ 0 };
+	act.sa_sigaction = handler;
 	act.sa_flags = SA_SIGINFO;
 	if (argc != 3)
 	{
